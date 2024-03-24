@@ -1,22 +1,51 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Brainstorm Weather & Activiy App</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <script src="" async defer></script>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BrainStorm Weather & Activity App</title>
+    <!-- custom styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- current dae/time light dark toggle -->
+    <nav class="weather-nav">
+      <!-- curr date/time/icon -->
+      <div class="date-time">date/time</div>
+      <!-- logo -->
+      <h2>BrainStorm</h2>
+      <!-- toggle light dark -->
+      <div class="placeholder">light/dark</div>
+    </nav>
+    <main>
+      <!-- container for weather info & search -->
+      <div class="weather-container">
+        <!-- main weather search -->
+        <div class="">
+          <input
+            type="text"
+            id="locationInput"
+            class="form-control"
+            placeholder="Enter your location"
+          />
+          <button id="getWeatherBtn">Get Weather</button>
+        </div>
+        <!-- Weather info display after search -->
+        <div class=""></div>
+      </div>
+      <div class="weather-dashboard">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+      </div>
+    </main>
+    <!-- custom Scripts -->
+    <script src="script.js"></script>
+  </body>
 </html>
